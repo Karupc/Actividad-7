@@ -94,3 +94,18 @@ def calculadora(a, b, operacion):
                     print(f"{num} es primo.")
                 else:
                     print(f"{num} no es primo.")
+            case "4":
+                calificaciones = ingresar_lista()
+                prom, altas, riesgo = promedio_calificaciones(calificaciones)
+                print(f"Promedio: {prom}")
+                print(f"Calificaciones ≥ 85: {altas}")
+                print(f"En riesgo (<60): {riesgo}")
+            case "5":
+                lista = ingresar_lista()
+                print("Mayor:", mayor(lista))
+                print("Menor:", menor(lista))
+                repes = frecuencia(lista)
+                if repes:
+                    print("Números repetidos:", repes)
+                else:
+                    print("No hay números repetidos.")
