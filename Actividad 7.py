@@ -88,3 +88,7 @@ def calculadora(a, b, operacion):
                 altura = pedir_entero("Ingrese la altura: ")
                 print("Área:", area_rectangulo(base, altura))
                 print("Perímetro:", perimetro_rectangulo(base, altura))
+            case "3":
+                num = pedir_entero("Ingrese un número: ")
+                if es_primo(num):
+                    print(f"{num} es primo.")
