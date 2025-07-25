@@ -83,3 +83,8 @@ def calculadora(a, b, operacion):
                 pos, neg, ceros = contar_pos_neg_ceros(lista)
                 print(f"Positivos: {pos}, Negativos: {neg}, Ceros: {ceros}")
                 print("Cantidad de múltiplos de 3:", multiplos_de_3(lista))
+            case "2":
+                base = pedir_entero("Ingrese la base: ")
+                altura = pedir_entero("Ingrese la altura: ")
+                print("Área:", area_rectangulo(base, altura))
+                print("Perímetro:", perimetro_rectangulo(base, altura))
