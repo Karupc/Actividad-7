@@ -51,3 +51,16 @@ def frecuencia(lista):
     for num in lista:
         repes[num] = repes.get(num, 0) + 1
     return {k: v for k, v in repes.items() if v > 1}
+def calculadora(a, b, operacion):
+    if operacion == "+":
+        return a + b
+    elif operacion == "-":
+        return a - b
+    elif operacion == "*":
+        return a * b
+    elif operacion == "/":
+        if b == 0:
+            return "No se puede dividir entre cero."
+        return a / b
+    else:
+        return "Operación no válida."
