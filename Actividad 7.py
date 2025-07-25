@@ -24,3 +24,30 @@ def contar_pos_neg_ceros(lista):
         else:
             ceros += 1
     return positivos, negativos, ceros
+def multiplos_de_3(lista):
+    return sum(1 for x in lista if x % 3 == 0)
+def area_rectangulo(base, altura):
+    return base * altura
+def perimetro_rectangulo(base, altura):
+    return 2 * (base + altura)
+def es_primo(numero):
+    if numero < 2:
+        return False
+    for i in range(2, numero):
+        if numero % i == 0:
+            return False
+    return True
+def promedio_calificaciones(lista):
+    prom = promedio(lista)
+    altas = sum(1 for x in lista if x >= 85)
+    riesgo = sum(1 for x in lista if x < 60)
+    return prom, altas, riesgo
+def mayor(lista):
+    return max(lista)
+def menor(lista):
+    return min(lista)
+def frecuencia(lista):
+    repes = {}
+    for num in lista:
+        repes[num] = repes.get(num, 0) + 1
+    return {k: v for k, v in repes.items() if v > 1}
