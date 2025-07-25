@@ -64,3 +64,22 @@ def calculadora(a, b, operacion):
         return a / b
     else:
         return "Operación no válida."
+    while True:
+        print("\n--- MENÚ PRINCIPAL ---")
+        print("1. Operaciones sobre una lista de números")
+        print("2. Área y perímetro de un rectángulo")
+        print("3. Verificar si un número es primo")
+        print("4. Promedio de calificaciones y evaluación")
+        print("5. Operaciones con una lista de enteros")
+        print("6. Calculadora básica")
+        print("7. Salir")
+        opcion = input("Seleccione una opción: ")
+
+        match opcion:
+            case "1":
+                lista = ingresar_lista()
+                print("Suma total:", suma_total(lista))
+                print("Promedio:", promedio(lista))
+                pos, neg, ceros = contar_pos_neg_ceros(lista)
+                print(f"Positivos: {pos}, Negativos: {neg}, Ceros: {ceros}")
+                print("Cantidad de múltiplos de 3:", multiplos_de_3(lista))
