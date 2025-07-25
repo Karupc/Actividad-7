@@ -92,3 +92,5 @@ def calculadora(a, b, operacion):
                 num = pedir_entero("Ingrese un número: ")
                 if es_primo(num):
                     print(f"{num} es primo.")
+                else:
+                    print(f"{num} no es primo.")
