@@ -109,3 +109,14 @@ def calculadora(a, b, operacion):
                     print("Números repetidos:", repes)
                 else:
                     print("No hay números repetidos.")
+            case "6":
+                a = pedir_entero("Ingrese el primer número: ")
+                b = pedir_entero("Ingrese el segundo número: ")
+                op = input("Ingrese operación (+, -, *, /): ")
+                resultado = calculadora(a, b, op)
+                print("Resultado:", resultado)
+            case "7":
+                print("Gracias por usar el programa.")
+                break
+            case _:
+                print("Opción no válida.")
